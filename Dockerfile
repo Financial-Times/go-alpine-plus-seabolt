@@ -11,4 +11,4 @@ WORKDIR /seabolt/build
 # CMAKE_INSTALL_LIBDIR=lib is a hack where we override default lib64 to lib to workaround a defect
 # in our generated pkg-config file
 # source https://medium.com/neo4j/neo4j-go-driver-is-out-fbb4ba5b3a30
-RUN cmake -D CMAKE_BUILD_TYPE=Release -D CMAKE_INSTALL_LIBDIR=lib .. && cmake --build . --target install
+RUN cmake -D CMAKE_BUILD_TYPE=Release -D CMAKE_INSTALL_LIBDIR=lib .. && cmake --build . --target install -Wno-format-truncation
