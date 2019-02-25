@@ -1,7 +1,7 @@
 FROM golang:1.10-alpine
 
 #add cgo dependencies deps
-RUN apk --no-cache add ca-certificates cmake make g++ openssl-dev git pkgconfig
+RUN apk --no-cache add ca-certificates cmake make g++ openssl-dev git curl pkgconfig
 
 # clone seabolt-1.7.2 source code > master
 RUN git clone https://github.com/neo4j-drivers/seabolt.git /seabolt
