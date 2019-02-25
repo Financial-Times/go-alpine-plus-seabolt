@@ -1,5 +1,5 @@
-# go-alpine-plus-seabolt
-Base image providing compiled seabolt on top of alpine go
+# go-plus-seabolt
+Base image providing compiled seabolt on top of debian + go
 
 ##Use case
 We are going to gradually update our neo4j go driver to the latest
