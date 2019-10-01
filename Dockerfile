@@ -1,4 +1,4 @@
-FROM golang:1.10-alpine
+FROM golang:1-alpine
 
 #add cgo dependencies deps
 RUN apk --no-cache add ca-certificates cmake make g++ openssl-dev git pkgconfig curl
